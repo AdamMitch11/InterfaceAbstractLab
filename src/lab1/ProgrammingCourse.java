@@ -33,22 +33,26 @@ public abstract class ProgrammingCourse {
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        setCredits(credits);
+        this.credits=credits;
     }
 
     public String getCourseName() {
         return courseName;
-    }
-
-    public final void setCourseName(String courseName) {
-        this.courseName = courseName;
-    }
-
+    }    
+    
     public final String getCourseNumber() {
         return courseNumber;
     }
 
-    public final void setCourseNumber(String courseNumber) {
+//    Made the following two methods private.
+//    They are used to instantiate the subclasses
+//    and should not change
+    
+    private void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    private void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
     
