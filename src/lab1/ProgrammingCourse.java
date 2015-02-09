@@ -26,6 +26,7 @@ public abstract class ProgrammingCourse {
     }
 
     public abstract void setPrerequisites(String prerequisites);
+    public abstract String getPrerequisites();
 
     public void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
