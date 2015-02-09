@@ -15,8 +15,10 @@ public class Startup {
             //Liskov sub
             ProgrammingCourse[] courseList = { new AdvancedJavaCourse("Advanced Java","COURSE_NUMBER") };
         
-            a.getCapitalizedCourseName();
+            for(ProgrammingCourse c : courseList) {
+            c.getCapitalizedCourseName();
         }
+    }
 }
 
 //I'm still not incredibly fond of abstract classes, but in a learning environment they
