@@ -37,7 +37,7 @@ public abstract class ProgrammingCourse {
         this.credits=credits;
     }
 
-    public String getCourseName() {
+    public final String getCourseName() {
         return courseName;
     }    
     
