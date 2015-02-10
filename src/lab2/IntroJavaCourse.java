@@ -68,7 +68,7 @@ public class IntroJavaCourse implements ProgrammingCourse{
     }
 
     @Override
-    public final void setCourseName(String courseName) {
+    public void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");
