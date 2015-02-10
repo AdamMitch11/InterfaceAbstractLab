@@ -23,10 +23,8 @@ public class AdvancedJavaCourse extends ProgrammingCourse{
 
     @Override
     public void setPrerequisites(String prerequisites) {
-        if(prerequisites == null || prerequisites.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: prerequisites cannot be null of empty string");
-            System.exit(0);
+        if(prerequisites == null || prerequisites.isEmpty()) {
+            this.prerequisites = "none";
         }
         this.prerequisites = prerequisites;
     }
