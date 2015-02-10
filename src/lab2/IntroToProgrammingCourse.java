@@ -3,16 +3,15 @@ package lab2;
 import javax.swing.JOptionPane;
 
 /**
- * Describe responsibilities here.
+ * Implement interface, no extra classes added.
  *
- * @author      your name goes here
+ * @author      Adam
  * @version     1.00
  */
 public class IntroToProgrammingCourse implements ProgrammingCourse{
     private String courseName;
     private String courseNumber;
     private double credits;
-    private String prerequisites;
 
     @Override
     public void createProgrammingCourse(String courseName, String courseNumber) {
