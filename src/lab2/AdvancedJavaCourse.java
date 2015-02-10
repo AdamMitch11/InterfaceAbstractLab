@@ -14,6 +14,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
     private double credits;
     private String prerequisites;
 
+    //Needs constructor>?<Or Validation
     @Override
     public void createProgrammingCourse(String courseName, String courseNumber) {
         setCourseName(courseName);
