@@ -10,18 +10,19 @@ package lab2;
  * @author Adam
  */
 public interface ProgrammingCourse {
-    public void createProgrammingCourse(String courseName, String courseNumber);
-
-    public String getCourseNumber();
-
-    public void setCourseNumber(String courseNumber);
-
-    public double getCredits();
     
-    public void setCredits(double credits);
+    public abstract void createProgrammingCourse(String courseName, String courseNumber);
 
-    public String getCourseName();
+    public abstract String getCourseNumber();
 
-    public void setCourseName(String courseName);
+    public abstract void setCourseNumber(String courseNumber);
+
+    public abstract double getCredits();
+    
+    public abstract void setCredits(double credits);
+
+    public abstract String getCourseName();
+
+    public abstract void setCourseName(String courseName);
   
 }

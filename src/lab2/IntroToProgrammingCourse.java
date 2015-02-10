@@ -13,7 +13,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
     private String courseNumber;
     private double credits;
 
-    //Needs constructor>?<Or Validation
+    //Needs Validation
     @Override
     public void createProgrammingCourse(String courseName, String courseNumber) {
         setCourseName(courseName);
